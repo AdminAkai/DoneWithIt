@@ -6,16 +6,17 @@ import {
 } from 'react-native'
 
 import styles from './Styles'
+import colors from '../../../config/colors'
 
-const LoginRegisterButton = ({ buttonType }) => {
+const LoginRegisterButton = ({ title, onPress, color }) => {
 
-    const [textOnButton, changeText] = useState(buttonType)
 
     return (
         <TouchableOpacity 
-            style={textOnButton === 'login' ? styles.login : styles.register}
+            style={[styles.button, { backgroundColor: colors[color] }]}
+            onPress={onPress}
         >
-            <Text style={styles.buttonText}>{textOnButton.toUpperCase()}</Text>
+            <Text style={styles.buttonText}>{title.toUpperCase()}</Text>
         </TouchableOpacity>
     )
 }

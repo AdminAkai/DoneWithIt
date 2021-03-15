@@ -27,16 +27,6 @@ const styles = StyleSheet.create({
     image: {
         flex: 1,
         resizeMode: 'contain'
-    },
-    closeIcon: {
-        backgroundColor: '#fc5c65',
-        width: 50,
-        height: 50
-    },
-    deleteIcon: {
-        backgroundColor: '#4ECDC4',
-        width: 50,
-        height: 50
     }
 })
 

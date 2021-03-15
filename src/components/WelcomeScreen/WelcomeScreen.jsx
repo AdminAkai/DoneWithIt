@@ -19,8 +19,8 @@ const WelcomeScreen = () => {
                     <Text style={styles.tagline}>Sell What You Don't Need</Text>
                 </View>
                 <View style={styles.loginContainer}>
-                    <LoginRegisterButton buttonType={'login'}/>
-                    <LoginRegisterButton buttonType={'register'}/>
+                    <LoginRegisterButton title={'login'} onPress={() => console.log('tapped login')} color={'primary'}/>
+                    <LoginRegisterButton title={'register'} onPress={() => console.log('tapped register')} color={'secondary'}/>
                 </View>
             </View>
         </ImageBackground>
