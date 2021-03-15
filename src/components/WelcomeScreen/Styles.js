@@ -32,6 +32,18 @@ const styles = StyleSheet.create({
         fontSize: 26,
         fontWeight: '700',
         marginTop: 10
+    },
+    login: {
+        backgroundColor: '#fc5c65',
+        width: '100%',
+        height: 50,
+        borderRadius: 50,
+    },
+    register: {
+        backgroundColor: '#4ECDC4',
+        width: '100%',
+        height: 50,
+        borderRadius: 50
     }
 })
 

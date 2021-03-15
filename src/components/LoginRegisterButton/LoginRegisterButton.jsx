@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { 
     View,
     TouchableOpacity,
@@ -9,11 +9,13 @@ import styles from './Styles'
 
 const LoginRegisterButton = ({ buttonType }) => {
 
+    const [textOnButton, changeText] = useState(buttonType)
+
     return (
         <TouchableOpacity 
-            styles={buttonType === 'login' ? styles.login : styles.register}
+            style={textOnButton === 'login' ? styles.login : styles.register}
         >
-            <Text>{buttonType}</Text>
+            <Text style={styles.buttonText}>{textOnButton.toUpperCase()}</Text>
         </TouchableOpacity>
     )
 }
