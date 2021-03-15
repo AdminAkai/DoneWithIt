@@ -12,8 +12,8 @@ const ViewImageScreen = () => {
     return (
         <View style={styles.container}>
             <View style={styles.iconContainer} >
-                <MaterialCommunityIcons name='close' size={10}/>
-                <MaterialCommunityIcons name='trash-can-outline' size={10}/>
+                <MaterialCommunityIcons color='white' name='close' size={35}/>
+                <MaterialCommunityIcons color='white' name='trash-can-outline' size={35}/>
             </View>
             <Image style={styles.image} source={require('../../../assets/chair.jpg')}/>
         </View>
