@@ -1,21 +1,16 @@
-import { StyleSheet, Platform } from 'react-native'
+import { StyleSheet } from 'react-native'
 
-import colors from '../../../config/colors'
+import defaultStyles from '../../../config/styles'
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: colors.light,
+        backgroundColor: defaultStyles.colors.light,
         borderRadius: 25,
         flexDirection: 'row',
         alignItems: 'center',
         width: '100%',
         padding: 15,
         marginVertical: 10
-    },
-    textInput: {
-        color: colors.dark,
-        fontSize: 18,
-        fontFamily: Platform.OS === "android" ? 'Roboto' : 'Avenir'
     },
     icon: {
         marginRight: 10

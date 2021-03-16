@@ -3,7 +3,7 @@ import {
 } from 'react-native'
 import Constants from 'expo-constants'
 
-import colors from '../../../config/colors'
+import defaultStyles from '../../../config/styles'
 
 const styles = StyleSheet.create({
 

@@ -6,21 +6,21 @@ import ListItem from '../ListItem'
 import Icon from '../Icon'
 import ListItemSeperator from '../ListItemSeperator'
 import styles from './Styles'
-import colors from '../../../config/colors'
+import defaultStyles from '../../../config/styles'
 
 const menuItems = [
     {
         title: 'My Listings',
         icon: {
             name: 'format-list-bulleted',
-            backgroundColor: colors.primary
+            backgroundColor: defaultStyles.colors.primary
         }
     },
     {
         title: 'My Messages',
         icon: {
             name: 'email',
-            backgroundColor: colors.secondary
+            backgroundColor: defaultStyles.colors.secondary
         }
     }
 ]

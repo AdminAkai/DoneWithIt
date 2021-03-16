@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import { 
-  TextInput,
-  Text
-} from 'react-native';
+import React from 'react';
+
 import AppTextInput from './src/components/AppTextInput/AppTextInput';
 
 import Screen from './src/components/Screen'

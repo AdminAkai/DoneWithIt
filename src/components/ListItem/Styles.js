@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native'
 
-import colors from '../../../config/colors'
+import defaultStyles from '../../../config/styles'
 
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         padding: 15,
-        backgroundColor: colors.white
+        backgroundColor: defaultStyles.colors.white
     },
     detailsContainer: {
         marginLeft: 10,
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         fontWeight: '500'
     },
     subtitle: {
-        color: colors.medium
+        color: defaultStyles.colors.medium
     }
 })
 

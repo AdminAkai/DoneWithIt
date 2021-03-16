@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native'
-import colors from '../../../config/colors'
+import defaultStyles from '../../../config/styles'
 
 const styles = StyleSheet.create({
     screen: {
         padding: 20,
-        backgroundColor: colors.light
+        backgroundColor: defaultStyles.colors.light
     }
 })
 

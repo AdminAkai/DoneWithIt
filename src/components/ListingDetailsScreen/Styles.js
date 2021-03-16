@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import colors from '../../../config/colors'
+import defaultStyles from '../../../config/styles'
 
 const styles = StyleSheet.create({
     test: {
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         fontWeight: '500'
     },
     price: {
-        color: colors.secondary,
+        color: defaultStyles.colors.secondary,
         fontWeight: 'bold',
         fontSize: 20,
         marginVertical: 10
