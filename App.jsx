@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
-  TextInput
+  TextInput,
+  Text
 } from 'react-native';
+import AppTextInput from './src/components/AppTextInput/AppTextInput';
 
 import Screen from './src/components/Screen'
 
@@ -9,9 +11,7 @@ export default function App() {
 
   return (
     <Screen>
-      <TextInput 
-        placeholder="First Name"
-      />
+      <AppTextInput placeholder='Username' icon='email'/>
     </Screen>
   )
 }
