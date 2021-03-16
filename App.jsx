@@ -4,11 +4,12 @@ import {
   Text
 } from 'react-native';
 
-import MessagesScreen from './src/components/MessagesScreen'
+import AccountScreen from './src/components/AccountScreen'
 
 export default function App() {
 
-  return <MessagesScreen />  
-
+  return (
+    <AccountScreen />
+  )
 }
 

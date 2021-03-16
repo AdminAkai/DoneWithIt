@@ -11,7 +11,7 @@ import AppText from '../AppText'
 
 import styles from './Styles'
 
-const ListItem = ({ title, subtitle, image, onPress, renderRightActions }) => {
+const ListItem = ({ title, subtitle, image, IconCommponent, onPress, renderRightActions }) => {
     return(
         <Swipeable renderRightActions={renderRightActions}>
             <TouchableHighlight 
@@ -19,10 +19,11 @@ const ListItem = ({ title, subtitle, image, onPress, renderRightActions }) => {
                 underlayColor={colors.light}
             >
                 <View style={styles.container}>
-                    <Image style={styles.image} source={image} />
-                    <View>
+                    {IconCommponent}
+                    {image && <Image style={styles.image} source={image} />}
+                    <View style={styles.detailsContainer}>
                         <AppText styles={styles.title}>{title}</AppText>
-                        <AppText style={styles.subtitle}>{subtitle}</AppText>
+                        {subtitle && <AppText style={styles.subtitle}>{subtitle}</AppText>}
                     </View>
                 </View>
             </TouchableHighlight>
