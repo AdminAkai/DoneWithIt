@@ -1,15 +1,18 @@
 import React from 'react';
 import { 
-  View,
-  Text
+  TextInput
 } from 'react-native';
 
-import AccountScreen from './src/components/AccountScreen'
+import Screen from './src/components/Screen'
 
 export default function App() {
 
   return (
-    <AccountScreen />
+    <Screen>
+      <TextInput 
+        placeholder="First Name"
+      />
+    </Screen>
   )
 }
 
