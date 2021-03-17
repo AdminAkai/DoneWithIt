@@ -2,7 +2,7 @@ import {
     StyleSheet,
 } from 'react-native'
 
-import defaultStyles from '../../../config/styles'
+import defaultStyles from '../../../../config/styles'
 
 const styles = StyleSheet.create({
     seperator: {

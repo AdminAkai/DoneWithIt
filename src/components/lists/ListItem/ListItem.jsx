@@ -6,8 +6,8 @@ import {
 } from 'react-native'
 import { Swipeable } from 'react-native-gesture-handler'
 
-import colors from '../../../config/colors'
-import AppText from '../AppText'
+import defaultStyles from '../../../../config/styles'
+import AppText from '../../AppText'
 
 import styles from './Styles'
 
@@ -16,7 +16,7 @@ const ListItem = ({ title, subtitle, image, IconCommponent, onPress, renderRight
         <Swipeable renderRightActions={renderRightActions}>
             <TouchableHighlight 
                 onPress={onPress}
-                underlayColor={colors.light}
+                underlayColor={defaultStyles.colors.light}
             >
                 <View style={styles.container}>
                     {IconCommponent}
