@@ -1,25 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import * as yup from 'yup'
+import * as Location from 'expo-location'
 
-import { AppForm, AppFormField, AppFormPicker, SubmitButton} from '../../components/forms'
+import { AppForm, AppFormField, AppFormPicker, SubmitButton, AppFormImagePicker } from '../../components/forms'
 import Screen from '../../components/Screen'
 
 import styles from './Styles'
 import validationDefaults from '../../../config/validationDefaults'
 import CategoryPickerItem from '../../components/CategoryPickerItem'
+import useLocation from '../../../hooks/useLocation'
 
 const initialFormValues = {
     title: '',
     price: '',
     category: null,
-    description: ''
+    description: '',
+    images: []
 }
 
 const validationSchema = yup.object().shape({
     title: validationDefaults.title,
     price: validationDefaults.price,
     category: validationDefaults.category,
-    description: validationDefaults.description
+    description: validationDefaults.description,
+    images: validationDefaults.images
 })
 
 const categories = [
@@ -81,13 +85,17 @@ const categories = [
   
 
 const ListingEditScreen = () => {
+
+  const location = useLocation()
+
     return (
         <Screen style={styles.container}>
             <AppForm 
                 initialValues={initialFormValues}
-                onSubmit={ values => console.log(values) }
+                onSubmit={ values => console.log(location) }
                 validationSchema={validationSchema}
             >
+                <AppFormImagePicker name="images"/>
                 <AppFormField 
                     maxLength={255}
                     autoCapitalize='none'

@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react'
 
-import { WelcomeScreen } from './app/screens'
+import ListingEditScreen from './app/screens/ListingEditScreen'
 
 export default function App() {
 
-
   return (
-    <WelcomeScreen />
+    <ListingEditScreen />
   )
 }
 

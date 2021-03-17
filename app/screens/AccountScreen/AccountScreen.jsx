@@ -1,10 +1,9 @@
 import React from 'react'
 import { View, FlatList } from 'react-native'
 
-import Screen from '../Screen'
-import ListItem from '../ListItem'
-import Icon from '../Icon'
-import ListItemSeperator from '../ListItemSeperator'
+import Screen from '../../components/Screen'
+import { ListItem, ListItemSeperator } from '../../components/lists'
+import Icon from '../../components/Icon'
 import styles from './Styles'
 import defaultStyles from '../../../config/styles'
 
