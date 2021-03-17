@@ -8,7 +8,7 @@ import {
 
 import styles from './Styles'
 
-import AppButton from '../AppButton'
+import AppButton from '../../components/AppButton'
 
 const WelcomeScreen = () => {
     return (

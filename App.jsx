@@ -1,12 +1,12 @@
 import React from 'react';
 
-import ListingEditScreen from './src/components/ListingEditScreen'
+import { WelcomeScreen } from './app/screens'
 
 export default function App() {
 
 
   return (
-    <ListingEditScreen />
+    <WelcomeScreen />
   )
 }
 

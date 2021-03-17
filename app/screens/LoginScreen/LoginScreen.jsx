@@ -9,8 +9,8 @@ import {
     AppForm,
     AppFormField,
     SubmitButton
-} from '../forms'
-import Screen from '../Screen'
+} from '../../components/forms'
+import Screen from '../../components/Screen'
 
 const validationSchema = yup.object().shape({
     email: validationDefaults.email,

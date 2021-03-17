@@ -1,8 +1,8 @@
 import React from 'react'
 import * as yup from 'yup'
 
-import { AppForm, AppFormField, SubmitButton } from '../forms'
-import Screen from '../Screen'
+import { AppForm, AppFormField, SubmitButton } from '../../components/forms'
+import Screen from '../../components/Screen'
 
 import styles from './Styles'
 import validationDefaults from '../../../config/validationDefaults'
