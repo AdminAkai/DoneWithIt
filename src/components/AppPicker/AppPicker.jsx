@@ -7,14 +7,14 @@ import defaultStyles from '../../../config/styles'
 import AppText from '../AppText'
 import PickerItem from '../PickerItem'
 
-const AppPicker = ({ icon, items, onSelectItem, placeholder, selectedItem }) => {
+const AppPicker = ({ icon, items, onSelectItem, placeholder, selectedItem, width = '100%' }) => {
 
     const [modalVisible, setModalVisible] = useState(false)
 
     return (
         <>
             <TouchableWithoutFeedback onPress={() => setModalVisible(true)}>
-                <View style={styles.container}>
+                <View style={[styles.container, { width }]}>
                     {icon && <MaterialCommunityIcons name={icon} size={20} color={defaultStyles.colors.medium} style={styles.icon}/>}
                     { selectedItem ? 
                         <AppText style={styles.text}>{selectedItem.label}</AppText> 
