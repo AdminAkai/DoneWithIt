@@ -1,15 +1,13 @@
 import React from 'react';
 
-import AppTextInput from './src/components/AppTextInput/AppTextInput';
-
-import Screen from './src/components/Screen'
+import RegisterScreen from './src/components/RegisterScreen'
+import LoginScreen from './src/components/LoginScreen'
 
 export default function App() {
 
+
   return (
-    <Screen>
-      <AppTextInput placeholder='Username' icon='email'/>
-    </Screen>
+    <RegisterScreen />
   )
 }
 

@@ -8,7 +8,7 @@ import {
 
 import styles from './Styles'
 
-import LoginRegisterButton from '../LoginRegisterButton'
+import AppButton from '../AppButton'
 
 const WelcomeScreen = () => {
     return (
@@ -19,8 +19,8 @@ const WelcomeScreen = () => {
                     <Text style={styles.tagline}>Sell What You Don't Need</Text>
                 </View>
                 <View style={styles.loginContainer}>
-                    <LoginRegisterButton title={'login'} onPress={() => console.log('tapped login')} color={'primary'}/>
-                    <LoginRegisterButton title={'register'} onPress={() => console.log('tapped register')} color={'secondary'}/>
+                    <AppButton title={'login'} onPress={() => console.log('tapped login')} color={'primary'}/>
+                    <AppButton title={'register'} onPress={() => console.log('tapped register')} color={'secondary'}/>
                 </View>
             </View>
         </ImageBackground>
