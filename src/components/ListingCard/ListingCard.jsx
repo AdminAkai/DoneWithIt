@@ -11,8 +11,8 @@ const ListingCard = ({ title, subtitle, image }) => {
         <View style={styles.card}>
             <Image style={styles.imageStyle} source={image}/>
             <View style={styles.detailsContainer}>
-                <AppText style={styles.title}>{title}</AppText>
-                <AppText style={styles.subtitle}>{subtitle}</AppText>
+                <AppText numberOfLines={1} style={styles.title}>{title}</AppText>
+                <AppText numberOfLines={2} style={styles.subtitle}>{subtitle}</AppText>
             </View>
         </View>
     )

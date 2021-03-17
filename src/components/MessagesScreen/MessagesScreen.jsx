@@ -7,14 +7,14 @@ import Screen from '../Screen'
 const initialMessages = [
     {
         id: 1,
-        title: 'T1',
-        description: 'D1',
+        title: 'Person',
+        description: 'Hey is this still available?',
         image: require('../../../assets/mosh.jpg')
     },
     {
         id: 2,
-        title: 'T2',
-        description: 'D2',
+        title: 'Person',
+        description: 'Im interested in this item',
         image: require('../../../assets/mosh.jpg')
     }
 ]
@@ -33,23 +33,26 @@ const MessagesScreen = () => {
             <FlatList
                 data={messages}
                 keyExtractor={message => message.id.toString()}
-                renderItem={({ item }) => <ListItem
-                    title={item.title}
-                    subtitle={item.description}
-                    image={item.image}
-                    onPress={() => console.log('message selected', item)}
-                    renderRightActions={() => 
-                        <ListItemDeleteAction onPress={() => handleDelete(item)}/>
-                    }
-                />}
+                renderItem={({ item }) => 
+                    <ListItem
+                        title={item.title}
+                        subtitle={item.description}
+                        image={item.image}
+                        onPress={() => console.log('message selected', item)}
+                        renderRightActions={() => 
+                            <ListItemDeleteAction onPress={() => handleDelete(item)}/>
+                        }
+                        showChevrons={true}
+                    />
+                }
                 ItemSeparatorComponent={ListItemSeperator}
                 refreshing={refreshing}
                 onRefresh={() => {
                     setMessages([
                         {
                             id: 2,
-                            title: 'T2',
-                            description: 'D2',
+                            title: 'Person',
+                            description: 'Im interested in this item',
                             image: require('../../../assets/mosh.jpg')
                         }
                     ])

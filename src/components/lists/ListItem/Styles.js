@@ -6,11 +6,13 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         padding: 15,
-        backgroundColor: defaultStyles.colors.white
+        backgroundColor: defaultStyles.colors.white,
+        alignItems: 'center'
     },
     detailsContainer: {
         marginLeft: 10,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        flex: 1
     },
     image: {
         width: 70,
