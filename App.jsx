@@ -1,13 +1,12 @@
 import React from 'react';
 
-import RegisterScreen from './src/components/RegisterScreen'
-import LoginScreen from './src/components/LoginScreen'
+import ListingEditScreen from './src/components/ListingEditScreen'
 
 export default function App() {
 
 
   return (
-    <RegisterScreen />
+    <ListingEditScreen />
   )
 }
 

@@ -9,8 +9,20 @@ import defaultStyles from '../../../config/styles'
 const AppTextInput = ({ icon, ...otherProps }) => {
     return (
         <View style={styles.container}>
-            {icon && <MaterialCommunityIcons name={icon} size={20} color={defaultStyles.colors.medium} style={styles.icon}/>}
-            <TextInput style={defaultStyles.text} underlineColorAndroid='transparent' {...otherProps} />
+            {icon && 
+                <MaterialCommunityIcons 
+                    name={icon} 
+                    size={20} 
+                    color={defaultStyles.colors.medium} 
+                    style={styles.icon}
+                />
+            }
+            <TextInput 
+                placeholderTextColor={defaultStyles.colors.medium}
+                style={defaultStyles.text} 
+                underlineColorAndroid='transparent' 
+                {...otherProps} 
+            />
         </View>
     )
 }
