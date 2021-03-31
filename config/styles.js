@@ -2,7 +2,7 @@ import { Platform } from 'react-native'
 
 import colors from './colors'
 
-export default {
+const defaultStyles = {
     colors,
     text: {
         color: colors.dark,
@@ -11,3 +11,4 @@ export default {
     } 
 }
 
+export default defaultStyles

@@ -3,13 +3,13 @@ import * as Location from 'expo-location'
 
 
 export default useLocation = () => {
-    try{
+    try {
         const [location, setLocation] = useState()
     
         const getLocation = async () => {
           const { granted } = await Location.requestPermissionsAsync()
           if (!granted) return
-          const { coords:  latitude, longitude } = await Location.getLastKnownPositionAsync()
+          const { latitude, longitude } = await Location.getLastKnownPositionAsync()
           setLocation({ latitude, longitude })
       
         }
@@ -20,6 +20,6 @@ export default useLocation = () => {
     
         return location
     } catch(error) {
-        
+      console.log(error)
     }
 }

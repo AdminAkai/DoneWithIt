@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { navigationTheme, AppNavigator } from './app/components/navigators'
 
-import ListingEditScreen from './app/screens/ListingEditScreen'
 
 export default function App() {
 
   return (
-    <ListingEditScreen />
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
+    </NavigationContainer>
   )
 }
 
