@@ -9,13 +9,13 @@ const initialMessages = [
         id: 1,
         title: 'Person',
         description: 'Hey is this still available?',
-        image: require('../../../assets/mosh.jpg')
+        image: require('../../assets/mosh.jpg')
     },
     {
         id: 2,
         title: 'Person',
         description: 'Im interested in this item',
-        image: require('../../../assets/mosh.jpg')
+        image: require('../../assets/mosh.jpg')
     }
 ]
 
@@ -53,7 +53,7 @@ const MessagesScreen = () => {
                             id: 2,
                             title: 'Person',
                             description: 'Im interested in this item',
-                            image: require('../../../assets/mosh.jpg')
+                            image: require('../../assets/mosh.jpg')
                         }
                     ])
                 }}

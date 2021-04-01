@@ -21,7 +21,7 @@ const LoginScreen = () => {
     return (
         <Screen style={styles.container}>
             <Image 
-                source={require('../../../assets/logo-red.png')}
+                source={require('../../assets/logo-red.png')}
                 style={styles.logo}
             />
             <AppForm

@@ -13,10 +13,10 @@ import AppButton from '../../components/AppButton'
 
 const WelcomeScreen = ({ navigation }) => {
     return (
-        <ImageBackground blurRadius={1} style={styles.backgroundImage} source={require('../../../assets/background.jpg')}>
+        <ImageBackground blurRadius={1} style={styles.backgroundImage} source={require('../../assets/background.jpg')}>
             <View style={styles.container}>
                 <View style={styles.imageContainer}>
-                    <Image style={styles.image} source={require('../../../assets/logo-red.png')}/>
+                    <Image style={styles.image} source={require('../../assets/logo-red.png')}/>
                     <Text style={styles.tagline}>Sell What You Don't Need</Text>
                 </View>
                 <View style={styles.loginContainer}>
