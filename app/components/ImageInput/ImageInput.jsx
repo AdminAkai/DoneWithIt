@@ -4,7 +4,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 import * as ImagePicker from 'expo-image-picker'
 
 import styles from './Styles'
-import defaultStyles from '../../../config/styles'
+import defaultStyles from '../../config/styles'
 
 const ImageInput = ({ imageUri, onChangeImage }) => {
 

@@ -3,7 +3,7 @@ import { View, TouchableWithoutFeedback, Modal, Button, FlatList } from 'react-n
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 import styles from './Styles'
-import defaultStyles from '../../../config/styles'
+import defaultStyles from '../../config/styles'
 import AppText from '../AppText'
 import PickerItem from '../PickerItem'
 

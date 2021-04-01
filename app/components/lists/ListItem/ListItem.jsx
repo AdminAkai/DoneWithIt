@@ -7,7 +7,7 @@ import {
 import { Swipeable } from 'react-native-gesture-handler'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
-import defaultStyles from '../../../../config/styles'
+import defaultStyles from '../../../config/styles'
 import AppText from '../../AppText'
 
 import styles from './Styles'

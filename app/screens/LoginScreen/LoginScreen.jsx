@@ -3,8 +3,7 @@ import { Image } from 'react-native'
 import * as yup from 'yup'
 
 import styles from './Styles'
-import validationDefaults from '../../../config/validationDefaults'
-
+import validationDefaults from '../../config/validationDefaults'
 import {
     AppForm,
     AppFormField,

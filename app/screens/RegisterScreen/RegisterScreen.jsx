@@ -5,7 +5,7 @@ import { AppForm, AppFormField, SubmitButton } from '../../components/forms'
 import Screen from '../../components/Screen'
 
 import styles from './Styles'
-import validationDefaults from '../../../config/validationDefaults'
+import validationDefaults from '../../config/validationDefaults'
 
 const initialFormValues = {
     name: '',

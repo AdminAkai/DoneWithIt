@@ -6,9 +6,9 @@ import { AppForm, AppFormField, AppFormPicker, SubmitButton, AppFormImagePicker 
 import Screen from '../../components/Screen'
 
 import styles from './Styles'
-import validationDefaults from '../../../config/validationDefaults'
+import validationDefaults from '../../config/validationDefaults'
 import CategoryPickerItem from '../../components/CategoryPickerItem'
-import useLocation from '../../../hooks/useLocation'
+import useLocation from '../../hooks/useLocation'
 
 const initialFormValues = {
     title: '',

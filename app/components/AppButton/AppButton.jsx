@@ -5,7 +5,7 @@ import {
 } from 'react-native'
 
 import styles from './Styles'
-import defaultStyles from '../../../config/styles'
+import defaultStyles from '../../config/styles'
 
 const AppButton = ({ title, onPress, color = 'primary' }) => {
     return (

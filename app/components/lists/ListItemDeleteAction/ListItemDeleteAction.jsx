@@ -3,7 +3,7 @@ import { TouchableWithoutFeedback, View } from 'react-native'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 import styles from './Styles'
-import defaultStyles from '../../../../config/styles'
+import defaultStyles from '../../../config/styles'
 
 const ListItemDeleteAction = ({ onPress }) => {
     return (

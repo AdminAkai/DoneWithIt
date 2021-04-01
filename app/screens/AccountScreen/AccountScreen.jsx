@@ -5,7 +5,7 @@ import Screen from '../../components/Screen'
 import { ListItem, ListItemSeperator } from '../../components/lists'
 import Icon from '../../components/Icon'
 import styles from './Styles'
-import defaultStyles from '../../../config/styles'
+import defaultStyles from '../../config/styles'
 import routes from '../../components/navigators/routes'
 
 const menuItems = [
